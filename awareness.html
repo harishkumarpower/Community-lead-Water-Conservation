@@ -1,0 +1,171 @@
+    
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community-Led Water Conservation and Drought Resilience Program</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://source.unsplash.com/1600x900/?water,river') no-repeat center center fixed;
+      background: url('image1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow: hidden;
+      color: #fff;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      text-align: center;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .carousel {
+      display: flex;
+      transition: transform 0.8s ease-in-out;
+      width: 700%;
+    }
+    .slide {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #ffeb3b;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 800px;
+    }
+    .controls {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 20;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 300px;
+      margin-top: 20px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+  </style>
+</head>
+  <script src="script.js"></script>
+</body>
+
+
+<section class="slide" id="awareness">
+    <h1>Community Help</h1>
+    <p>Collaborating with local people to protect and preserve water resources.</p>
+            <p>Join us in making a difference! Here’s how you can contribute:</p>
+            <ul>
+                <li><strong>Practice Water Conservation:</strong> Reduce daily water wastage by fixing leaks, using efficient irrigation, and harvesting rainwater.</li>
+                <li><strong>Volunteer:</strong> Participate in community cleanup events, awareness campaigns, and conservation projects.</li>
+                <li><strong>Donate:</strong> Support our initiatives by contributing funds to help implement water-saving technologies in affected areas.</li>
+                <li><strong>Educate Others:</strong> Share knowledge about water conservation with your friends, family, and neighbors.</li>
+                <li><strong>Advocate for Policy Change:</strong> Support local policies and programs that promote sustainable water use.</li>
+            </ul>
+            <button onclick="window.location.href='#contact'">Get Involved</button>
+</section>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water-Saving Tips</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 500px; margin: auto; }
+        .tip { background: #e0f7fa; padding: 10px; margin-top: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Water Usage Survey</h2>
+        <label>Shower Duration (minutes):</label>
+        <input type="number" id="shower" min="0" value="0">
+        <br>
+        <label>Loads of Laundry per Week:</label>
+        <input type="number" id="laundry" min="0" value="0">
+        <br>
+        <label>Dishwashing (times per day):</label>
+        <input type="number" id="dishes" min="0" value="0">
+        <br>
+        <label>Lawn Watering (times per week):</label>
+        <input type="number" id="lawn" min="0" value="0">
+        <br>
+        <button onclick="showTips()">Get Water-Saving Tips</button>
+        
+        <div id="tips"></div>
+    </div>
+
+    <script>
+        function showTips() {
+            let shower = document.getElementById('shower').value;
+            let laundry = document.getElementById('laundry').value;
+            let dishes = document.getElementById('dishes').value;
+            let lawn = document.getElementById('lawn').value;
+            
+            let tips = "";
+            
+            if (shower > 10) {
+                tips += "<div class='tip'>Reduce shower time by 5 minutes to save up to 50 liters per day!</div>";
+            }
+            if (laundry > 3) {
+                tips += "<div class='tip'>Wash full loads of laundry to save water and energy.</div>";
+            }
+            if (dishes > 3) {
+                tips += "<div class='tip'>Use a dishwasher or fill the sink instead of running water continuously.</div>";
+            }
+            if (lawn > 2) {
+                tips += "<div class='tip'>Water your lawn early in the morning or late at night to reduce evaporation.</div>";
+            }
+            if (tips === "") {
+                tips = "<div class='tip'>Great job! You're already using water efficiently.</div>";
+            }
+            
+            document.getElementById('tips').innerHTML = tips;
+        }
+    </script>
+</body>
+</html>
+
+

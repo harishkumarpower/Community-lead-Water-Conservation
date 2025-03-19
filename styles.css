@@ -1,0 +1,205 @@
+body 
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.learn-more-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.learn-more-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+#live-weather, #drought-alert {
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+#live-weather button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #2196F3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+.resources-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  color: white;
+}
+.resources-section h2 {
+  margin-top: 30px;
+  color: #ffeb3b;
+}
+.resources-section ul {
+  list-style: none;
+  padding: 0;
+}
+.resources-section li {
+  margin: 10px 0;
+}
+.resources-section a {
+  color: #03a9f4;
+  text-decoration: none;
+}
+#smart-irrigation, #water-recycling {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);  /* semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;  /* Center on the page */
+}
+
+#smart-irrigation h2, #water-recycling h2 {
+  font-size: 2rem;
+  color: #ffeb3b;  /* Bright yellow color */
+}
+
+#smart-irrigation p, #water-recycling p {
+  font-size: 1.2rem;
+  color: #fff;  /* White color for readability */
+  margin: 10px 0;
+}
+
+/* Style for buttons */
+button {
+  padding: 12px 30px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Text styling */
+#smart-irrigation #moisture-level, 
+#smart-irrigation #weather-status, 
+#water-recycling #recycled-water {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffeb3b;  /* Bright yellow to highlight important data */
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.6); /* Adds transparency for better readability */
+    margin: 20px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+#videos {
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+video, iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+button:hover {
+    background: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water-Saving Tips</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 500px; margin: auto; }
+        .tip { background: #e0f7fa; padding: 10px; margin-top: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Water Usage Survey</h2>
+        <label>Shower Duration (minutes):</label>
+        <input type="number" id="shower" min="0" value="0">
+        <br>
+        <label>Loads of Laundry per Week:</label>
+        <input type="number" id="laundry" min="0" value="0">
+        <br>
+        <label>Dishwashing (times per day):</label>
+        <input type="number" id="dishes" min="0" value="0">
+        <br>
+        <label>Lawn Watering (times per week):</label>
+        <input type="number" id="lawn" min="0" value="0">
+        <br>
+        <button onclick="showTips()">Get Water-Saving Tips</button>
+        
+        <div id="tips"></div>
+    </div>
+
+    <script>
+        function showTips() {
+            let shower = document.getElementById('shower').value;
+            let laundry = document.getElementById('laundry').value;
+            let dishes = document.getElementById('dishes').value;
+            let lawn = document.getElementById('lawn').value;
+            
+            let tips = "";
+            
+            if (shower > 10) {
+                tips += "<div class='tip'>Reduce shower time by 5 minutes to save up to 50 liters per day!</div>";
+            }
+            if (laundry > 3) {
+                tips += "<div class='tip'>Wash full loads of laundry to save water and energy.</div>";
+            }
+            if (dishes > 3) {
+                tips += "<div class='tip'>Use a dishwasher or fill the sink instead of running water continuously.</div>";
+            }
+            if (lawn > 2) {
+                tips += "<div class='tip'>Water your lawn early in the morning or late at night to reduce evaporation.</div>";
+            }
+            if (tips === "") {
+                tips = "<div class='tip'>Great job! You're already using water efficiently.</div>";
+            }
+            
+            document.getElementById('tips').innerHTML = tips;
+        }
+    </script>
+</body>
+</html>
